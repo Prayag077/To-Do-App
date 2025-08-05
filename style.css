@@ -1,34 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
+:root {
+  --background: #000430;
+  --secondaryBackground: #171c48;
+  --text: #fff;
+  --purple: #828dff;
+  --teal: #24feee;
+}
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box ;
 }
 
+
 body{
-    font-family: "Jost", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('./images/bodyBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-color: var(--background) ;
+    color: var(--text);
+    
 }
 
 .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 0 auto;
+}
+
+.stats-container{
+    
+    padding: 30px;  
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.details{
+    width: 100%;
+}
+
+
+
+#progress-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: var(--teal);
+    transition: all 0.3s ease;
+}
+
+
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.todo-app{
+form{
+    margin-top: 60px;
     width: 100%;
-    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
 }
