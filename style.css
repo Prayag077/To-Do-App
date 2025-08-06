@@ -155,6 +155,11 @@ button{
     opacity: 50%;
 }
 
+.task input{
+    accent-color: var(--purple);
+    
+}
+
 
 
 
