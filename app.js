@@ -43,6 +43,13 @@ const updateTaskList = () => {
 const toggleTaskComplete = (index) => {
     tasks[index].completed = !tasks[index].completed;
     updateTaskList();
+    confetti({
+    particleCount: 150,
+    angle: 90,
+    spread: 100,
+    startVelocity: 30,
+    origin: { x: 0.5, y: 0.5 }
+});
 };
 
 const deleteTask = (index) => {

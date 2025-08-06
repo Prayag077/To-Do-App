@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
+    font-family: "Jost", sans-serif;
 }
 
 
@@ -135,6 +136,7 @@ button{
     cursor: pointer;
 }
 
+
 .task {
     display: flex;
     align-items: center;
@@ -145,6 +147,12 @@ button{
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.task.completed p {
+    text-decoration: line-through;
+    color: #878080;
+    opacity: 50%;
 }
 
 
