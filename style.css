@@ -59,6 +59,7 @@ body{
     height: 10px;
     background-color: var(--teal);
     transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 
@@ -160,6 +161,33 @@ button{
     
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .stats-container{
+    width: 90%;
+    gap: 10px;
+    }   
+
+    form{
+    width: 90%;
+    }
+
+    .details p{
+        margin-bottom: 30px;
+    }
+
+    .task-list{
+        width: 90%;
+    }
+
+
+    
+   
+}
 
 
 
